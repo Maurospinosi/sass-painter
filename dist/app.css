@@ -8,6 +8,15 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
 header {
   background-color: black;
   width: 100%;
@@ -20,5 +29,35 @@ header {
 
 .header_bottom {
   height: 80px;
+}
+
+.header_top ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header_top i {
+  color: #009cff;
+  padding: 0 5px;
+  font-size: 13px;
+}
+
+.header_top li {
+  font-size: 13px;
+  padding: 10px 16px;
+}
+
+.header_top li a {
+  color: lightgrey;
+  text-decoration: none;
+}
+
+.header_top li select {
+  padding: 2px;
+}
+
+li:hover a {
+  color: white;
+  text-decoration: underline;
 }
 
