@@ -3,8 +3,7 @@ header{
   width: 100%;
 }
 .header_top{
-  height: 70px;
-  border-bottom: 1px solid white;
+  height: 50px;
   ul{
     @include displayFlex;
     justify-content: $end;
@@ -15,7 +14,7 @@ header{
     font-size: 13px;
   }
   li{
-    font-size: 13px;
+    font-size: 11px;
     padding: 10px 16px;
     a{
       color : $greyColor;
@@ -26,16 +25,31 @@ header{
     }
   }
 }
-&:hover a{
+li:hover a{
   color:white;
   text-decoration: underline;
 }
 .header_bottom{
-  height:80px;
+  height:60px;
   ul{
     @include displayFlex;
+    align-items: center;
+    flex-wrap: wrap;
   }
   li{
     color:white;
+    padding: 0 20px;
+    font-size: 13px;
+    @include cursor;
+    line-height: 60px;
+    i{
+      color: $greyColor;
+      font-size: 13px;
+      padding-left: 3px;
+    }
   }
+}
+li:hover{
+  background-color: white;
+  color: $greyColor;
 }

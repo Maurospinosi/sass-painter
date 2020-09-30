@@ -23,12 +23,7 @@ header {
 }
 
 .header_top {
-  height: 70px;
-  border-bottom: 1px solid white;
-}
-
-.header_bottom {
-  height: 80px;
+  height: 50px;
 }
 
 .header_top ul {
@@ -43,12 +38,12 @@ header {
 }
 
 .header_top li {
-  font-size: 13px;
+  font-size: 11px;
   padding: 10px 16px;
 }
 
 .header_top li a {
-  color: lightgrey;
+  color: #989898;
   text-decoration: none;
 }
 
@@ -59,5 +54,34 @@ header {
 li:hover a {
   color: white;
   text-decoration: underline;
+}
+
+.header_bottom {
+  height: 60px;
+}
+
+.header_bottom ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header_bottom li {
+  color: white;
+  padding: 0 20px;
+  font-size: 13px;
+  cursor: pointer;
+  line-height: 60px;
+}
+
+.header_bottom li i {
+  color: #989898;
+  font-size: 13px;
+  padding-left: 3px;
+}
+
+li:hover {
+  background-color: white;
+  color: #989898;
 }
 
