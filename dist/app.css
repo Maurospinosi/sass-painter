@@ -8,3 +8,17 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+header {
+  background-color: black;
+  width: 100%;
+}
+
+.header_top {
+  height: 70px;
+  border-bottom: 1px solid white;
+}
+
+.header_bottom {
+  height: 80px;
+}
+
