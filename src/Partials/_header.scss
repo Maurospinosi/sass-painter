@@ -1,3 +1,44 @@
+@media screen and (max-width: 768px){
+  .header_bottom{
+    height:60px;
+    align-items: center;
+  }
+  .logo{
+    margin: auto;
+  }
+  .hamburger{
+    margin-left: 10px;
+  }
+  .header_bottom-list li{
+    display: none;
+  }
+  .header_top{
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 999px){
+  .header_bottom{
+    height:120px;
+  }
+  .hamburger{
+    display: none;
+  }
+  .logo{
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 1000px){
+  .header_bottom{
+    height:60px;
+  }
+  .hamburger{
+    display: none;
+  }
+  .logo{
+    margin-left: 10px;
+  }
+}
+// --------------------------------------------
 header{
   background-color: $blackColor;
   width: 100%;
@@ -6,7 +47,7 @@ header{
   height: 50px;
   ul{
     @include displayFlex;
-    justify-content: $end;
+    justify-content: flex-end;
   }
   i{
     color:$blueColor;
@@ -25,12 +66,12 @@ header{
     }
   }
 }
-li:hover a{
+.header_top li:hover a{
   color:white;
   text-decoration: underline;
 }
 .header_bottom{
-  height:60px;
+  @include displayFlex;
   ul{
     @include displayFlex;
     align-items: center;
@@ -49,7 +90,27 @@ li:hover a{
     }
   }
 }
-li:hover{
+.header_bottom li:hover{
   background-color: white;
   color: $greyColor;
+}
+.logo{
+  @include cursor;
+  display: flex;
+  align-self: center;
+}
+.img_logo{
+  height: 24px;
+  width: 90px;
+  vertical-align: middle;
+}
+.hamburger{
+  color:white;
+  @include cursor;
+  width: 38px;
+  border-radius: 5px;
+  text-align: center;
+}
+.hamburger:hover{
+  background-color: rgb(51, 51, 51);
 }

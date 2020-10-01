@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px){
+}
+@media screen and (min-width: 769px) and (max-width: 999px){
+  .hero{
+    height: 500px;
+    width: 100%;
+    background-image: url("../img/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+@media screen and (min-width: 1000px){
+  .hero{
+    height:500px;
+    width: 100%;
+    background-image: url("../img/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+// ----------------------------------------------------------
+.flex{
+  @include displayFlex;
+}
+.hero_right{
+  height: 450px;
+  width: calc(100% / 3);
+  background-color: black;
+}
+.hero_center{
+  height: 450px;
+  width: calc(100% / 3);
+}
+.hero_left{
+  height: 450px;
+  width: calc(100% / 3);
+  align-self: flex-end;
+}
